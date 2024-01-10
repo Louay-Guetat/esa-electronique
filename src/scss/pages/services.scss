@@ -1,0 +1,62 @@
+@import '../utils/variables';
+
+.services{
+    background-image: url('/public/backgrounds/white_dots.png');
+    background-color: $secondary-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+        color: $blue-color;
+    }
+
+    .red-slash{
+        display: flex;
+        width: 5%;
+        height: 9px;
+        background-color: $red-color;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .services{
+        background-image: url('/public/backgrounds/white_dots.png');
+        background-color: $secondary-background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1{
+            font-size: 32px;
+            color: $blue-color;
+        }
+    
+        .red-slash{
+            display: flex;
+            width: 25%;
+            height: 9px;
+            background-color: $red-color;
+        }
+    
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 5rem 0rem;
+        }
+    }
+    
+} 

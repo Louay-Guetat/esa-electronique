@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.partners {
+  background-image: url("/public/backgrounds/intensif_dots.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partners h1 {
+  font-size: 50px;
+}
+.partners .red-slash {
+  display: flex;
+  width: 5%;
+  height: 9px;
+  background-color: RGBA(211, 43, 40, 1);
+}
+.partners .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  padding: 5rem 2rem;
+}
+.partners .main .card img {
+  height: 240px;
+}
+
+@media screen and (max-width: 1042px) {
+  .partners {
+    background-image: url("/public/backgrounds/intensif_dots.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .partners h1 {
+    font-size: 32px;
+  }
+  .partners .red-slash {
+    display: flex;
+    width: 25%;
+    height: 9px;
+    background-color: RGBA(211, 43, 40, 1);
+  }
+  .partners .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    padding: 5rem 2rem;
+  }
+  .partners .main .card img {
+    height: 60%;
+  }
+}

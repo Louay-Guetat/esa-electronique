@@ -1,0 +1,68 @@
+@import '../utils/variables';
+
+.partners{
+    background-image: url('/public/backgrounds/intensif_dots.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        font-size: 50px;
+    }
+
+    .red-slash{
+        display: flex;
+        width: 5%;
+        height: 9px;
+        background-color: $red-color;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        padding: 5rem 2rem;
+
+        .card{
+            img{
+                height: 240px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .partners{
+        background-image: url('/public/backgrounds/intensif_dots.png');
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1{
+            font-size: 32px;
+        }
+    
+        .red-slash{
+            display: flex;
+            width: 25%;
+            height: 9px;
+            background-color: $red-color;
+        }
+    
+        .main {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            padding: 5rem 2rem;
+
+            .card{
+                img{
+                    height: 60%;
+                }
+            }
+        }
+    }
+}

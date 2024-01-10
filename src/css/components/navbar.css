@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.scrolled {
+  position: fixed;
+  top: 0.05%;
+  z-index: 99999;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+}
+.navbar .left-content {
+  width: 20%;
+  background-color: RGBA(6, 21, 56, 1);
+}
+.navbar .main-navbar {
+  z-index: 9999;
+  position: relative;
+  width: 60%;
+  background-color: RGBA(211, 43, 40, 1);
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin-top: -1.5rem;
+}
+.navbar .main-navbar ::before,
+.navbar .main-navbar ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.navbar .main-navbar ::before {
+  border-width: 25px 25px 0px 0px;
+  border-color: transparent RGBA(6, 21, 56, 1) transparent transparent;
+  left: -25px;
+}
+.navbar .main-navbar ::after {
+  border-width: 25px 0 0px 25px;
+  border-color: transparent transparent transparent RGBA(6, 21, 56, 1);
+  right: -25px;
+}
+.navbar .main-navbar button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  transition: text-decoration-color 1s;
+}
+.navbar .main-navbar button:hover {
+  color: RGBA(6, 21, 56, 1);
+  text-decoration-color: RGBA(6, 21, 56, 1);
+  transition: 0.7s;
+}
+.navbar .main-navbar #search {
+  margin-left: auto;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+.navbar .main-navbar #search:hover {
+  color: RGBA(6, 21, 56, 1);
+}
+.navbar .right-content {
+  width: 20%;
+  background-color: RGBA(6, 21, 56, 1);
+}
+
+@media screen and (max-width: 1042px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .left-content,
+  .navbar .right-content {
+    display: none;
+  }
+  .navbar .main-navbar {
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .navbar .main-navbar ::before,
+  .navbar .main-navbar ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .navbar .main-navbar ::before {
+    border-width: 0x 0px 0px 0px;
+    border-color: transparent transparent transparent transparent;
+    left: 0;
+  }
+  .navbar .main-navbar ::after {
+    border-width: 0px 0 0px 0px;
+    border-color: transparent transparent transparent transparent;
+    right: 0;
+  }
+  .navbar .main-navbar button {
+    font-size: 8px;
+    padding-right: 0.5rem;
+  }
+  .navbar .main-navbar #search {
+    margin-left: 0;
+    font-size: 8px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar .main-navbar #search:hover {
+    color: RGBA(6, 21, 56, 1);
+  }
+}

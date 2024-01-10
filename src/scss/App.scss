@@ -1,0 +1,20 @@
+@import './utils/variables';
+
+body{
+    background-color: $primary-background-color;
+    font-family: $default-font;
+    color: #fff;
+    .App{
+        margin: 2.5rem 0rem;
+        .logo{
+            width: 100%;
+            background-color: $secondary-background-color;
+            display: flex;
+            justify-content: center;
+            padding: 1.5rem 0rem 3rem 0rem;
+            img{
+                width: 186px;
+            }
+        }
+    }
+}

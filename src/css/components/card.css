@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 0rem 1rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  margin: 0;
+  height: 262px;
+}
+.card h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: RGBA(6, 21, 56, 1);
+  width: 100%;
+  height: 72px;
+  text-align: center;
+}
+.card .partner-link {
+  color: white;
+  text-decoration: underline;
+}
+.card:hover .partner-link {
+  color: blue;
+}
+
+@media screen and (max-width: 1042px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+  }
+  .card img {
+    width: 100%;
+    margin: 0;
+  }
+  .card h2 {
+    font-size: 18px;
+    height: 32px;
+  }
+}

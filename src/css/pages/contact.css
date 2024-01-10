@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.contact {
+  display: flex;
+  min-height: 80vh;
+}
+.contact .in-touch {
+  background-image: url("/public/backgrounds/red_dots.png");
+  background-color: RGBA(211, 43, 40, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+  width: 100%;
+  text-align: right;
+}
+.contact .in-touch h1 {
+  font-size: 60px;
+}
+.contact .in-touch form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .in-touch form .inputs-style {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.contact .in-touch form .inputs-style input {
+  padding: 0.7rem 1rem;
+  margin-right: 1rem;
+  border: none;
+}
+.contact .in-touch form .inputs-style input:last-child {
+  margin: 0;
+}
+.contact .in-touch form textarea {
+  min-height: 150px;
+  max-height: 300px;
+  font-family: "Poppins";
+  border: none;
+  padding: 1rem;
+  resize: vertical;
+}
+.contact .in-touch form button {
+  width: 45%;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: RGBA(6, 21, 56, 1);
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact .localisation {
+  background-color: rgb(32, 32, 32);
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.contact .localisation iframe {
+  width: 600px;
+  height: 450px;
+  border-radius: 17px;
+}
+
+@media screen and (max-width: 1042px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+  }
+  .contact .in-touch {
+    background-image: url("/public/backgrounds/red_dots.png");
+    background-color: RGBA(211, 43, 40, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 1rem;
+  }
+  .contact .in-touch h1 {
+    font-size: 42px;
+  }
+  .contact .in-touch form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact .in-touch form .inputs-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem 0rem;
+  }
+  .contact .in-touch form .inputs-style input {
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+    border: none;
+    width: 100%;
+  }
+  .contact .in-touch form .inputs-style input:last-child {
+    margin: 0;
+  }
+  .contact .in-touch form textarea {
+    min-height: 150px;
+    max-height: 300px;
+    font-family: "Poppins";
+    border: none;
+    padding: 1rem;
+    resize: vertical;
+    width: 78%;
+  }
+  .contact .in-touch form button {
+    width: 80%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: RGBA(6, 21, 56, 1);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .contact .localisation {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem;
+  }
+  .contact .localisation iframe {
+    width: 80%;
+    height: 300px;
+    border-radius: 17px;
+  }
+}

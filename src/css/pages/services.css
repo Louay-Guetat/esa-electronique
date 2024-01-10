@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+.services {
+  background-image: url("/public/backgrounds/white_dots.png");
+  background-color: #D8D8D8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services h1 {
+  font-size: 50px;
+  color: RGBA(6, 21, 56, 1);
+}
+.services .red-slash {
+  display: flex;
+  width: 5%;
+  height: 9px;
+  background-color: RGBA(211, 43, 40, 1);
+}
+.services .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5rem 2rem;
+}
+
+@media screen and (max-width: 1042px) {
+  .services {
+    background-image: url("/public/backgrounds/white_dots.png");
+    background-color: #D8D8D8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services h1 {
+    font-size: 32px;
+    color: RGBA(6, 21, 56, 1);
+  }
+  .services .red-slash {
+    display: flex;
+    width: 25%;
+    height: 9px;
+    background-color: RGBA(211, 43, 40, 1);
+  }
+  .services .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 0rem;
+  }
+}

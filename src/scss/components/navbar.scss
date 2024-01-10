@@ -1,0 +1,149 @@
+@import '../utils/variables';
+
+
+.scrolled {
+    position: fixed;
+    top: 0.05%;
+    z-index: 99999;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    
+    .left-content {
+        width: 20%;
+        background-color: $primary-background-color;
+    }
+
+    .main-navbar {
+        z-index: 9999;
+        position: relative;
+        width: 60%;
+        background-color: $red-color;
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        margin-top: -1.5rem;
+        
+        ::before,
+        ::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+        }
+
+        ::before {
+            border-width: 25px 25px 0px 0px;
+            border-color: transparent $primary-background-color transparent transparent;
+            left: -25px;
+        }
+
+        ::after {
+            border-width: 25px 0 0px 25px;
+            border-color: transparent transparent transparent $primary-background-color;
+            right: -25px;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            font-weight:bolder;
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            padding-right: 1.5rem;
+            cursor: pointer;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            text-decoration-thickness: 2px;
+            text-decoration-style: solid;
+            text-decoration-line: underline;
+
+            transition: text-decoration-color 1s;
+
+            &:hover{
+                color: $blue-color;
+                text-decoration-color: $blue-color;
+                transition: 0.7s;
+            }
+        }
+
+        #search {
+            margin-left: auto;
+            font-size: 26px;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover{
+                color: $blue-color;
+            }
+        }
+    }
+
+    .right-content {
+        width: 20%;
+        background-color: $primary-background-color;
+    }
+}
+
+@media screen and (max-width: 1042px) {
+    .navbar {
+        flex-direction: column;
+
+        .left-content,
+        .right-content {
+            display: none;
+        }
+
+        .main-navbar {
+            width: 100%;
+            padding: 1rem 0rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            ::before,
+            ::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+            }
+
+            ::before {
+                border-width: 0x 0px 0px 0px;
+                border-color: transparent transparent transparent transparent;
+                left: 0;
+            }
+
+            ::after {
+                border-width: 0px 0 0px 0px;
+                border-color: transparent transparent transparent transparent;
+                right: 0;
+            }
+            
+            button {
+                font-size: 8px;
+                padding-right: 0.5rem;
+            }
+
+            #search {
+                margin-left: 0;
+                font-size: 8px;
+                color: #fff;
+                cursor: pointer;
+    
+                &:hover{
+                    color: $blue-color;
+                }
+            }
+        }
+    }
+}
