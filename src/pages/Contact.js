@@ -10,7 +10,7 @@ const Contact = () =>{
     const sendEmail = (e) =>{
         e.preventDefault();
         
-        emailjs.sendForm('service_ok5vez5', 'template_dwox41l', form.current, 'SLMkRbuvhEjyZdz2a')
+        emailjs.sendForm(process.env.GMAIL_API_KEY, process.env.TEMPLATE_API_KEY, form.current, process.env.CREADENTIALS_KEY)
         .then(() => {
             toast.success('Votre Mail a été envoyer avec succés!', {
                 position: toast.POSITION.BOTTOM_CENTER
